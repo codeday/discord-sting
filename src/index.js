@@ -35,7 +35,7 @@ const ATTRACT_MESSAGES = [
 
 function attractMsg() {
   attractChannel.send(ATTRACT_MESSAGES[Math.floor(Math.random() * ATTRACT_MESSAGES.length)]);
-  setTimeout(attractMsg, Math.floor(Math.random() * 60 * 60 * 24 * 3) + (60 * 60 * 24 * 14));
+  setTimeout(attractMsg, Math.floor(Math.random() * 1000 * 60 * 60 * 24 * 3) + (1000 * 60 * 60 * 24 * 14));
 }
 
 honeypot.on('ready', () => {
